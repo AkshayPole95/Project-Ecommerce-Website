@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+
+      .Product{
+        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 100px;
+        place-items: center;
+      }
+
+      #Product_Details{
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+
+      .navbar{
+        top: 0;
+        margin: 0;
+        position: sticky;
+        z-index: 1000;
+      }
+
+      .categoryy{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        place-items: center;
+        padding-top: 100px;
+        padding-bottom: 200px;
+      }
+  
+      .text{
+        padding-top: 70px;
+        padding-left: 50px;
+      }
+
+      .Mycart{
+        width: 100%;
+        height: 100vh;
+        background-color:rgba(27, 119, 223, 0.5);
+        margin-top: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .carousel-item {
+        height: 100vh;
+        width: 100%; 
+      }
+
+ 
+  
+
+    </style>
+
+  </head>
+<body>
+
+    <!-- Headder --->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#carouselExample">Home Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Product_Details">Product Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Category">Category</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#Cart">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+      <!-- Home Page -->
+       <div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1469395446868-fb6a048d5ca3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNuZWFrZXJ8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item active" >
+                <img src="https://media.istockphoto.com/id/187310279/photo/brown-leather-shoe.jpg?s=612x612&w=0&k=20&c=N-G1SP8dDojp3M_ykS7tQuYI8OVPWM0XA8_knBiWRtY=" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://t3.ftcdn.net/jpg/04/42/36/12/240_F_442361244_CJ7iVVkbPjd95RKkCdXcj9eyKNr3EOPV.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+       </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+       
+       <!-- Product Details -->
+      <div id="Product_Details" class="Product">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nike Running Shoe</h5>
+            <p class="card-text">Price: ₹2125 <strike>₹2,500</strike></p>
+            <p class="card-text" style="color: green;">Discount: 15% off</p>            
+            <a href="#" class="btn btn-primary">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://media.istockphoto.com/id/1350560575/photo/pair-of-blue-running-sneakers-on-white-background-isolated.jpg?s=612x612&w=0&k=20&c=A3w_a9q3Gz-tWkQL6K00xu7UHdN5LLZefzPDp-wNkSU=" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Puma Sports Shoe</h5>
+            <p class="card-text">Price: 3000 Rs</p>
+            <p class="card-text" style="color: green;">Discount: 14% off</p>            
+            <a href="#" class="btn btn-primary">Add to cart</a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://t3.ftcdn.net/jpg/01/21/81/86/360_F_121818673_6EID5iF76VCCc4aGOLJkd94Phnggre3o.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Adidas Running Shoe</h5>
+            <p class="card-text">Price: 1550 Rs</p>
+            <p class="card-text" style="color: green;">Discount: 22% off</p>            
+            <a href="#" class="btn btn-primary">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://cdn.pixabay.com/photo/2022/10/08/17/04/shoes-7507418_1280.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Clarks Formal Mens</h5>
+            <p class="card-text">Price: 25000 Rs</p>
+            <p class="card-text" style="color: green;">Discount: 20% off</p>            
+            <a href="#" class="btn btn-primary">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.shutterstock.com/image-photo/this-picture-mens-formal-dress-600nw-2318397345.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Red Chief Formal Mens</h5>
+            <p class="card-text">Price: 36000 Rs</p>
+            <p class="card-text" style="color: green;">Discount: 19% off</p>
+            <a href="#" class="btn btn-primary">Add to cart</a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://rukminim2.flixcart.com/image/850/1000/kq5iykw0/shoe/w/8/u/11-lpbc01l004-12-louis-philippe-brown-original-imaeddv75xghhrhu.jpeg?q=90&crop=false" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Redtape Formal Mens </h5>
+            <p class="card-text">Price: 27000 Rs</p>
+            <p class="card-text" style="color: green;">Discount: 25% off</p>            
+            <a href="#" class="btn btn-primary">Add to cart</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Category ------------------------------------------------------------------------------------- -->
+
+      <div class="categoryy"  id="Category">
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.shutterstock.com/image-photo/hologram-shoes-sports-fitness-run-600nw-2240460409.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Sports Shoe Mens</h5>            
+            <a href="#" class="btn btn-primary">View</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://media.istockphoto.com/id/187310279/photo/brown-leather-shoe.jpg?s=612x612&w=0&k=20&c=N-G1SP8dDojp3M_ykS7tQuYI8OVPWM0XA8_knBiWRtY=" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Formal shoe Mens</h5>            
+            <a href="#" class="btn btn-primary">View</a>          
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://media.istockphoto.com/id/1326109254/photo/black-and-blue-mens-sandals-walking-on-the-beach-in-summer-vacation-time.jpg?s=612x612&w=0&k=20&c=bhZ0NRJ7SEEPsVWs_u9KEL-pLEiG6Ursk8Wc-0nZ1lo=" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Flips Mens</h5>            
+            <a href="#" class="btn btn-primary">View</a>            
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart Part -->
+
+      <div class="Mycart" id="Cart">
+      
+          <h1>CONTACT</h1>
+          <h3>Email Address: akshaypole@gmail.com</h3>
+          <h3> Mobile No: +91 9505xxxx31</h3>
+          <h3>Business Address: Hyderabad</h3>
+
+      </div>
+    
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
